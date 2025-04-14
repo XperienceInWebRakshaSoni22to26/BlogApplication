@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Environment variables file
+.env
+
+# Build output folder (for Vite frontend)
+client/blogapp/dist/
+
+# OS files (macOS, Windows, etc.)
+.DS_Store
+Thumbs.db
