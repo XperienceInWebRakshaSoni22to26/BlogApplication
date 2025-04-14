@@ -41,7 +41,7 @@ const __dirnamePath = path.resolve(); // to resolve __dirname in ES module style
 const frontendPath = path.join(__dirnamePath, '../client/blogapp/dist');
 app.use(express.static(frontendPath));
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
     res.sendFile(path.join(frontendPath, 'index.html'));
 });
 
