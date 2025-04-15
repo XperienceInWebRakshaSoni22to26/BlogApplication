@@ -1,11 +1,11 @@
-import Header from "./components/Header";
+import Header from "./Components/Header.jsx";
 import { Routes, Route } from "react-router-dom";
-import Blogs from "./pages/Blogs";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import UserBlogs from "./pages/UserBlogs";
-import CreateBlog from "./pages/CreateBlog";
-import BlogDetails from "./pages/BlogDetails";
+import Blogs from "./Pages/Blogs";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
+import UserBlogs from "./Pages/UserBlogs";
+import CreateBlog from "./Pages/CreateBlog";
+import BlogDetails from "./Pages/BlogDetails";
 import { Toaster } from "react-hot-toast";
 
 function App() {
