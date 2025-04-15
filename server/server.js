@@ -50,6 +50,6 @@ const PORT = process.env.PORT || 8080;
 
 
 // listen
-// app.listen(PORT, () => {
-//     console.log(`Server running on ${process.env.DEV_MODE} mode on port no ${PORT}`.bgCyan.white);
-// });
+app.listen(PORT, () => {
+    console.log(`Server running on ${process.env.DEV_MODE} mode on port no ${PORT}`.bgCyan.white);
+});

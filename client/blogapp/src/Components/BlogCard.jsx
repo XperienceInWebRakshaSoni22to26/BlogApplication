@@ -25,7 +25,7 @@ export default function BlogCard({
     const navigate = useNavigate();
 
     const handleEdit = () => {
-        navigate(`/blog-details/${id}`);
+        navigate(`${import.meta.env.VITE_BACKEND_URL}/blog-details/${id}`);
     };
 
     const handleDelete = async() => {

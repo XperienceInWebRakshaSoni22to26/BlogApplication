@@ -8,7 +8,7 @@ const Blogs = () => {
     // Get blogs
     const getAllBlogs = async() => {
         try {
-            const response = await axios.get("/api/v1/blog/all-blog");
+            const response = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/all-blog`);
             if (response && response.data && response.data.success) {
                 setBlogs(response.data.blogs);
             }
