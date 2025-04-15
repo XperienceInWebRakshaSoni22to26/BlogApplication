@@ -24,7 +24,7 @@ function App() {
         Route path = "/blogs"
         element = { < Blogs / > }
         /> <
-        Route path = "/my-blogs"
+        Route path = "/user-blog"
         element = { < UserBlogs / > }
         /> <
         Route path = "/blog-details/:id"
