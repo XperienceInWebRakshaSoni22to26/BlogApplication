@@ -13,7 +13,7 @@ const BlogDetails = () => {
     // get blog details
     const getBlogDetail = async() => {
         try {
-            const { data } = await axios.get(`/api/v1/blog/get-blog/${id}`);
+            const { data } = await axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/get-blog/${id}`);
             if (data && data.success) {
                 setBlog(data.blog);
                 setInputs({

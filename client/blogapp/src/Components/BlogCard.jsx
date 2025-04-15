@@ -30,7 +30,7 @@ export default function BlogCard({
 
     const handleDelete = async() => {
         try {
-            const response = await axios.delete(`/api/v1/blog/delete-blog/${id}`);
+            const response = await axios.delete(`${import.meta.env.VITE_BACKEND_URL}/api/v1/blog/delete-blog/${id}`);
             if (response && response.data && response.data.success) {
                 alert("Blog Deleted");
                 window.location.reload();
